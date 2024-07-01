@@ -1,3 +1,14 @@
+/**
+ * Union-Find data structure
+ * 
+ * Time Complexities:
+ *  constructor: O(n)
+ *  union(): O(log n) amortized time complexity
+ *  find(): O(log n) amortized time complexity
+ *  isConnected(): O(log n) amortized time complexity
+ *  reset(): O(1)
+ */
+
 class UnionFind {
     constructor(n) {
         this.parents = [...new Array(n).keys()];
